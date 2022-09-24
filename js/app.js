@@ -146,16 +146,43 @@ $(document).ready(function(){
       $("#medi4").text(result3.text());
      });
 
-   
+    
+  var gettitle = document.getElementsByClassName("acctitle ");
+  var getcontent = document.querySelectorAll(".accontent");
+
+  for(var i=0;i<gettitle.length;i++){
+
+     gettitle[i].addEventListener("click",function(e){
+
+       this.classList.toggle("act");
+       var content = this.nextElementSibling;
+
+       if(content.style.height){
+        content.style.height = null;
+       }else{
+       // console.log('hello')
+        //console.log(getcontent.scrollHeight)
+        content.style.height = content.scrollHeight + "px";
+       }
+
+     })
+  }
+
+ 
 
 
-     
 
-   
-  
+
+
+
+
+
+
+
 
 
     })
+
 
 
    

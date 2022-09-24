@@ -993,6 +993,62 @@ header{
 margin-left:520px;
 }
 
+.accordion{
+	width: 100%;
+}
+
+
+.acctitle{
+	background:#777;
+	color: #fff;
+	font-size: 18px;
+	user-select: none;
+	padding: 15px;
+	margin-left: 0;
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+
+.acctitle i{
+	margin-right: 10px;
+}
+
+.acctitle:hover,.act{
+	background: steelblue;
+}
+
+.acctitle::after{	
+		font-family:"Font Awesome 5 Free";
+	content:"\f067";
+  /* content: "+";*/
+   font-weight:550;
+   float: right;
+   line-height: 20px;
+
+}
+
+.act::after{
+	font-family:"Font Awesome 5 Free";
+	content:"\f068";
+	 font-weight: 550;
+   float: right;
+   line-height: 20px;
+}
+
+.accontent{
+	height: 0;
+	overflow: hidden;
+  background: #f4f4f4;
+  text-indent: 20px;
+  text-align: justify;
+  font-size: 16px;
+
+  padding: 5px 20px;
+
+  transition: all .5s;
+
+}
 
 
 
